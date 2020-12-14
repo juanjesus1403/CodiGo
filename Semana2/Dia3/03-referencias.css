@@ -1,0 +1,74 @@
+/* REFERENCIAS */
+/* Estoy seleccionando todos los h1 y los article */
+
+h1, article{
+    background: skyblue;
+}
+
+/* esto va aplicar a todos los Article que sean hijos de section */
+
+section article{
+    color:blue
+}
+
+/* con > estoy seleccionando SOLO LOS PRIMEROS HIJO  */
+
+ol>li{
+    font-family: Arial;
+    color:orangered
+}
+
+ol>ul>li{
+    color:violet;
+}
+
+/* este estilo aplica al primer p que este debajo de div
+
+al primer elemento debajo de otro*/
+div+p{
+    background: blueviolet;
+    color:white;
+}
+
+.seccion1>h2{
+    border:2px solid green
+}
+
+h2{
+    border:3px solid peru !important
+}
+
+/* Pseudoclases */
+/* He escogido un elemnto que sea hijo y que este en la posicion 3 */
+
+p:nth-child(3){
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(182, 57, 35);
+}
+
+p:first-child{
+    color: salmon;
+    text-decoration: underline;
+    font-size: 16px !important
+}
+
+/* todos lo elemento impares que seleccion */
+tr:nth-child(odd){
+    background: springgreen;
+}
+
+tr:nth-child(even){
+    background: lightcoral;
+}
+
+thead tr:nth-child(1){
+    background-color: darkgreen;
+    color: white;
+}
+
+
+/* Abarca todos los parrafos tengan o no tengan etequita padre */
+p:nth-child(1){
+    font-size: 34px;
+}

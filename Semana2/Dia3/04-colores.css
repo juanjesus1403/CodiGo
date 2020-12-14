@@ -1,0 +1,33 @@
+li:nth-child(1){
+    color: red;
+}
+
+li:nth-child(2){
+    color: blue;
+}
+
+/* HEXADECIMAL :Cada paar representa un color
+Rojo, Verde, Azul 
+00 hasta FF*/
+
+li:nth-child(3){
+    color: #14ca22;
+}
+
+
+/* RGB - 0 AL 255 */
+li:nth-child(4){
+    color: rgb(150, 12, 8);
+}
+
+/* rgba (red,gree,blue,transparente)
+0 a 1 con decimales */
+li:nth-child(5){
+    color: rgba(14, 80, 60, 0.5);
+}
+
+/* hsl */
+li:nth-child(6){
+    color: hsl(80, 41%, 42%)
+    ;
+}

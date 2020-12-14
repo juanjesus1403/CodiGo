@@ -1,0 +1,24 @@
+h1{
+    font-family: Arial;
+}
+
+section{
+    background: aqua;
+}
+
+/* Esto es una clase,funciona para varios elementos
+
+.nombre_clase*/
+.resaltar{
+    background:yellow
+}
+
+
+.textorojo{
+    color:red
+}
+
+/* Esto es un id */
+#importante{
+    border:3px solid red;
+}
