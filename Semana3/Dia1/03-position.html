@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .papa{
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+        }
+
+        .hijo{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+
+        .caja4{
+            /* crema de helado */
+            /* position:fixed; me permite cambiar la posicion de un elemento respecto al naegador */
+
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+        }
+
+        .caja2{
+            /* Se mueve respecto a su punto de origen */
+            position: relative;
+            top: 20px;
+            left: 10px;
+            background: yellow;
+            
+            /* para oner la hoja en encima de la otra */
+            z-index: 2;
+        }
+
+        .caja1{
+            /* es como si no estuviera , las demas cajan asumen que no esta */
+            /* se mueve en referencia al relative */
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            background: orange;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="papa">
+        <div class="hijo caja1">cajita</div>
+        <div class="hijo caja2">cajita</div>
+        <div class="hijo caja3">cajita</div>
+        <div class="hijo caja4">cajita</div>
+
+    </div>
+</body>
+</html>

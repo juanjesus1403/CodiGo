@@ -1,0 +1,43 @@
+nav{
+    background: coral;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* @media pantallas el ancho de pantalla sea de un maximo de 420 */
+@media screen and (max-width:420px){
+    /* Las propiedades y valores que yo ponga */
+    nav{
+        background: blue;
+    }
+    
+    ul{
+        /* Display:block */
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media screen and (max-width:320px){
+
+    nav{
+        background-color: purple;
+    }
+
+}
+
+ 
